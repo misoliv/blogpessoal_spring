@@ -3,20 +3,24 @@ package com.generation.blogpessoal.security;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.Date;
+
 import javax.crypto.SecretKey;
+
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
+
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
- 
+
 @Component
 public class JwtService {
  
-    private static final String SECRET = "xxxxxxxxxxxx";
-    private static final Duration EXPIRATION_DURATION = Duration.ofMinutes(60);
-    private final SecretKey signingKey;
+	private static final String SECRET = "1e06fa5a8ccc7a7389cb1077d566f446ff7c4a3f77058a1fae9ecd28f22e8022";
+	private static final Duration EXPIRATION_DURATION = Duration.ofMinutes(60);
+	
+	private final SecretKey signingKey;
 
     public JwtService() {
         byte[] keyBytes = Decoders.BASE64.decode(SECRET);
