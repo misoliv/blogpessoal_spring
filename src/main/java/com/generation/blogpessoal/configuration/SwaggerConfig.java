@@ -31,7 +31,7 @@ public class SwaggerConfig {
                 .contact(new Contact()
                     .name("Milena Svitras")
                     .url("https://github.com/misoliv")
-                    .email("milenasvitras@gmail.com")))
+                    .email("milenassoliv@gmail.com")))
             .externalDocs(new ExternalDocumentation()
                 .description("Generation Brasil")
                 .url("https://brazil.generation.org/"))
